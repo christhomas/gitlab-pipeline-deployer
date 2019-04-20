@@ -11,6 +11,7 @@ env:
   - secure: "gHTed23dbpXsQhQLtZFVKKaUsNv9YFVZcnGm6uXRm8ekkDldu8JPtR6iWs+TDkZ6zVa54F0ftyETelP5F8sibfLDtiGkBPmdf7Vly2wFS4AdO7qCBCZyLflbCHYyMybRU/bUR03GBcNjuU85Z4kFhAno//zgOZ30CSDyiWJlHWfg+RmexluHEElJAEp2IrXQ2kWIGBqcC7ePe2doFcwGPD8vEJezPFgBZ/mrZsuUbmOW6ujCCIQYM5sC6gymjIeQ40FfBEtEM3a9IrN4S1b/eFme4M0AaREs2phR4AmD71wNFnhr9NHcZOtKefZNDGMtx7GNAFWZWURgK5YCSsOAX7o/Z7mX4m1rBSNYlwlDrg8VGXvHt6ag0+cys+hE5NsK2vuCC9iZfpnd1ZUm2kZukk3R/seDPALx7mIdR2qqMr3wtJqio7U7s6jzMKQF5+J2FPOEH+5VHRMe8SyOUA9xCJ6R0rd9HhQnTT/OzMC72dFILcJ0mzB5wUqNlQCzj6WOSik1mqJDL/altqC9gER0t0jdtinuzw/DEVH64HBpBptIZbadmMyJfbp4ESztdIpQRK5rHVTc3RvRxPQvHNVosZDlnpswZtxJk/YMx9Gier5Wy+1OOme46rq09+G+9Lm7rtxWSMhDFOV1lyfadK7ewFjeFc+YKd7nT4x7NneIXaA="
 
 before_install:
+- VAR1=${DOCKERHUB_USERNAME}; echo $VAR1; env
 - TAG=$(time=$(date +%T) && echo "$(date +%F)_${time//:/.}")
 - IMAGE=pipeline-deployer
 - echo "Building image '${IMAGE}:${TAG}'"
