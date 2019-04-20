@@ -7,8 +7,8 @@ language: generic
 
 env:
   global:
-    - secure: eVq4UBI0/1eRtr73lIPXxpIMifreAh5k6gkt2r2YNti7RsYpCylSggMuB1mkzbTUCkLzbGZjc/FCqKA0lF0YaRwlH6Ki7bWCZ+6wZQ6OYUdDtN8okCXBJoag14zPNRmrwaRy+hywx14yZ64tMdmV9j4P0z0NkeAJ73KbymiulZ/0kqU2dkHWvV2ou6KS3xXmijMyLDUnzqt//myAh1PkFllYNIQhkyoRA6KS9s/yJgHmt7jD7glRO6LL3Oy1slrAu6Jcc5X42dZP6MgmOWNodWfsCd1bd1NLXsAKHLtuszJBXkpfht+HOdFe4DjWZu7wqOOhie9aThyULfPKftOhf98EQ24i6+N9Gy1WaB181+wmNVRj45n7E43qwFUMIWKWXR7EKET+Bdp0gM3eSPy+w0v+d3iknpg8NIZCdenuk4y1/kl24hVk9FU9LNLgRpURYV9nVKC8ofC7jOxRzRL2vWY0tyqF+bHcQCL4LpEIJoePQwNkNUON0o4uOxtCtVR0eQJlyU4qw5VmwNNgifo+C3C2uDhGdIsyYFBvHGCpr2hiQFqQSmDDHOVDLlEFEeswXjfoazBq7q7WJ5c+hB9Rj44W5UGfL4wEua872sgNvc+UBwMmMzxrbDW7zWFP7zns4qGcUDnKtJK9mQSxNap+A+Rbw95Ah3k0bJbEEoSj3/w=
-    - secure: jmcah7/UrPshBZhwG/xMOeggZNx+MgDHsIOGrujZ0Utn3R/T8SLpj3NsgYBSnohbUo+rlTto73A+1jGHTbcPSVFrzOdLz2FQr/wIMZ/uTB+4/gvWt34seTnEBOy/JgHwxOOK41hNMJa+OrbgemCslm9WKiCgUvFNrpplIH4GWYZ2GOFJau3Jqu4x+ju2+lfoJW6gHR7kvrWXDX5yMrN/vHrTYznUtPEw8pV/q6Bl8gzdd4HDPxzy+XWM62RNGD0v4Zl5hOOH83etMxm+BMh80C14uTNatHyywFX36zb1TwjxO+cbRqGXI102SgFmfE17bz+OPd0LG80uLrFISdV4yfQGtGmpmpJmX77W+Onfm48u92uVeMnwopyR3my1n8czk7vmOhHW0vk/+jvDtCsPOLjzzbVdasyqEi+TjqS+5/7CRNB2ApYK0Simemo0KfaxWgFC9GEb4vv1xafc9WOdaUJ8QgBBCJ0Ov2uCYZhJde5Nj+zZZKRcoERZfrFOgtTK52vdvKoeHNXo4+TiVV+/WD5zhVL9PDptKv20Ya/mKcH6O7ICXxfePJpWFyuh3RTf09usHAI0i/oxErLdOgPIL4PWItKZo5iZmpC9N3qksJL4Bh+2PMB+4ha4NjdpStQQLIPsT780PKt8ByRvNN5U3hAzScep2Z9mHd2Bme6d5NE=
+    - secure: "eVq4UBI0/1eRtr73lIPXxpIMifreAh5k6gkt2r2YNti7RsYpCylSggMuB1mkzbTUCkLzbGZjc/FCqKA0lF0YaRwlH6Ki7bWCZ+6wZQ6OYUdDtN8okCXBJoag14zPNRmrwaRy+hywx14yZ64tMdmV9j4P0z0NkeAJ73KbymiulZ/0kqU2dkHWvV2ou6KS3xXmijMyLDUnzqt//myAh1PkFllYNIQhkyoRA6KS9s/yJgHmt7jD7glRO6LL3Oy1slrAu6Jcc5X42dZP6MgmOWNodWfsCd1bd1NLXsAKHLtuszJBXkpfht+HOdFe4DjWZu7wqOOhie9aThyULfPKftOhf98EQ24i6+N9Gy1WaB181+wmNVRj45n7E43qwFUMIWKWXR7EKET+Bdp0gM3eSPy+w0v+d3iknpg8NIZCdenuk4y1/kl24hVk9FU9LNLgRpURYV9nVKC8ofC7jOxRzRL2vWY0tyqF+bHcQCL4LpEIJoePQwNkNUON0o4uOxtCtVR0eQJlyU4qw5VmwNNgifo+C3C2uDhGdIsyYFBvHGCpr2hiQFqQSmDDHOVDLlEFEeswXjfoazBq7q7WJ5c+hB9Rj44W5UGfL4wEua872sgNvc+UBwMmMzxrbDW7zWFP7zns4qGcUDnKtJK9mQSxNap+A+Rbw95Ah3k0bJbEEoSj3/w="
+    - secure: "jmcah7/UrPshBZhwG/xMOeggZNx+MgDHsIOGrujZ0Utn3R/T8SLpj3NsgYBSnohbUo+rlTto73A+1jGHTbcPSVFrzOdLz2FQr/wIMZ/uTB+4/gvWt34seTnEBOy/JgHwxOOK41hNMJa+OrbgemCslm9WKiCgUvFNrpplIH4GWYZ2GOFJau3Jqu4x+ju2+lfoJW6gHR7kvrWXDX5yMrN/vHrTYznUtPEw8pV/q6Bl8gzdd4HDPxzy+XWM62RNGD0v4Zl5hOOH83etMxm+BMh80C14uTNatHyywFX36zb1TwjxO+cbRqGXI102SgFmfE17bz+OPd0LG80uLrFISdV4yfQGtGmpmpJmX77W+Onfm48u92uVeMnwopyR3my1n8czk7vmOhHW0vk/+jvDtCsPOLjzzbVdasyqEi+TjqS+5/7CRNB2ApYK0Simemo0KfaxWgFC9GEb4vv1xafc9WOdaUJ8QgBBCJ0Ov2uCYZhJde5Nj+zZZKRcoERZfrFOgtTK52vdvKoeHNXo4+TiVV+/WD5zhVL9PDptKv20Ya/mKcH6O7ICXxfePJpWFyuh3RTf09usHAI0i/oxErLdOgPIL4PWItKZo5iZmpC9N3qksJL4Bh+2PMB+4ha4NjdpStQQLIPsT780PKt8ByRvNN5U3hAzScep2Z9mHd2Bme6d5NE="
 
 before_install:
   - TAG=$(time=$(date +%T) && echo "$(date +%F)_${time//:/.}")
@@ -22,10 +22,7 @@ script:
   - docker images ${IMAGE}
 
 after_success:
-  - if [ "${TRAVIS_PULL_REQUEST}" = "false" ]; then
-      echo "${DOCKERHUB_PASSWORD}" | docker login -u="${DOCKERHUB_USERNAME}" --password-stdin;
-
-      if [ "${TRAVIS_BRANCH}" = "master"]; then docker push ${IMAGE}:latest; fi
-
-      docker push ${IMAGE}:${TAG};
-    fi
+  - if [ "${TRAVIS_PULL_REQUEST}" != "false" ]; then exit 0
+  - echo "${DOCKERHUB_PASSWORD}" | docker login -u="${DOCKERHUB_USERNAME}" --password-stdin;
+  - if [ "${TRAVIS_BRANCH}" = "master"]; then docker push ${IMAGE}:latest; fi
+  - docker push ${IMAGE}:${TAG};
