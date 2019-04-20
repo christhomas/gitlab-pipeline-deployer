@@ -7,8 +7,9 @@ language: generic
 
 before_install:
   - TAG=$(time=$(date +%T) && echo "$(date +%F)_${time//:/.}")
+  - echo ${TAG}
   - docker build --pull -t pipeline-deployer:${TAG} .
 
 script:
-  - TAG=$(time=$(date +%T) && echo "$(date +%F)_${time//:/.}")
+  - echo ${TAG}
   - docker images pipeline-deployer:${TAG}
