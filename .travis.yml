@@ -23,7 +23,7 @@ script:
 - docker images ${IMAGE}
 
 after_success:
-- if [ "${TRAVIS_PULL_REQUEST}" != "false" ]; then exit 0
-- echo "${DOCKERHUB_PASSWORD}" | docker login -u="${DOCKERHUB_USERNAME}" --password-stdin;
-- if [ "${TRAVIS_BRANCH}" = "master"]; then docker push ${IMAGE}:latest; fi
+- if [ "${TRAVIS_PULL_REQUEST}" != "false" ]; then exit 0; fi
+- docker login -u ${DOCKERHUB_USERNAME} -p ${DOCKERHUB_PASSWORD};
+- if [ "${TRAVIS_BRANCH}" = "master" ]; then docker push ${IMAGE}:latest; fi
 - docker push ${IMAGE}:${TAG};
