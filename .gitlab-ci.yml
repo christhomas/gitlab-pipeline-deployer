@@ -1,0 +1,26 @@
+image: docker:latest
+
+services: 
+  - docker:dind
+
+before_script:
+  - docker info
+
+variables:
+  DOCKER_DRIVER: overlay2
+  DOCKER_HOST: tcp://localhost:2375
+  IMAGE: $CI_REGISTRY_IMAGE/image
+
+stages:
+  - build
+
+deployer:
+  stage: build
+  script:
+    - echo ${CI_JOB_TOKEN} | docker login -u gitlab-ci-token --password-stdin ${CI_REGISTRY}
+    - docker build --pull -t $IMAGE:${CI_PIPELINE_ID} .
+    # tag each build separately
+    - docker push $IMAGE:${CI_PIPELINE_ID}
+    # tag this as latest
+    - docker tag $IMAGE:${CI_PIPELINE_ID} $IMAGE:latest
+    - docker push $IMAGE:latest
