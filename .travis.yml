@@ -11,9 +11,8 @@ env:
   - secure: "rOqr9FCDCj1cJ9GiL1O07tXGRCYb+3P53qW5ESWgUJrbzUzjg2Hj/+u3ZSZBAVCNVVR9ZwHnJO8XagQ5qStt7YlkjY6IcfpKCPzzG+gsVzWR4ZwLysXJY1GEHgIPHwTyrWmKKcxJB3ik3Di4RONj6YohZYexyXUK9UQJXbmAMCKeD6wvt/Uv75jgtRbR6lH70whmD+jdBLc+4i7+Gc7lBNk+Xl0n9TQTgtBfa9W7/ne+S9ECj+GG4f8C30LNdouOBVodkX/vJ2ETDbyzHNzcyF8Hz610bktoKIsR2/oZZKqZuxsSRDA57J/U9X7Ea1Z9/n5swDOMs2Et/37ZRtR5RpgTDK2Gf7Y+u4LlH/0nsKXRRWwvjemv5Wb56L4RF5YBMOrLubcwlSYNt2yrO10fpkB13IuAUfIOCrRDi0cHj1HO7bFQ3cs0YUu7iw+k7scPG4SUiq9wJYUz4jLrRtA6ui002LX1VKtI9v+KJRe4qmHq8Tqjj8UnHaA9j5mj09jKSAIS69NtVlXAU49+1f2WoCdFju33K8sJ5rcGIbNlFu6CdJx/x3rSCQKMEJlxDt0iOel0cfuUMxmATgxZbzSoCuavMZheihUpRPMVs1EGHaqwYI5mgnSs+bMP5ADTqjFuYXpvx3313GPrvDGZPiMkKrML6tZPEBVSyzqMpb+mFDs="
 
 before_install:
-- VAR1=${DOCKERHUB_USERNAME}; echo $VAR1; env
 - TAG=$(time=$(date +%T) && echo "$(date +%F)_${time//:/.}")
-- IMAGE=pipeline-deployer
+- IMAGE=christhomas/pipeline-deployer
 - echo "Building image '${IMAGE}:${TAG}'"
 - docker build --pull -t ${IMAGE}:${TAG} .
 - if [ "${TRAVIS_BRANCH}" = "master" ]; then docker tag ${IMAGE}:${TAG} ${IMAGE}:latest;
